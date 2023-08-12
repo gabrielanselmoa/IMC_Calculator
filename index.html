@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC Calculator</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+<body>
+    <main class="container">
+        <section>
+            <img src="./assets/images/ilustration.svg" alt="ilustration" id="image">
+        </section>
+
+        <section>
+            <div class="imc-container">
+                <div class="imc-text">
+                    <h1>IMC - Calculator</h1>
+                    <label class="labels">Name: </label>
+                    <br>
+                    <input type="text" name="nameField" id="nameField" placeholder="Name">
+                    <br>
+                    <label class="labels">Height (m): </label>
+                    <span><ion-icon name="accessibility"></ion-icon></span>
+                    <br>
+                    <input type="text" name="heightField" id="heightField" placeholder="Height">
+                    <br>
+                    <label class="labels">Weight (Kg): </label>
+                    <span><ion-icon name="barbell-outline"></ion-icon></span>
+                    <br>
+                    <input type="text" name="weightField" id="weightField" placeholder="Weight">
+                    <br>
+                    <div class="btn-area">
+                        <button class="btn" id="calcBtn">Calculate</button>
+                        <button class="btn" id="clearBtn">Clear</button>
+                    </div>
+                    <textarea name="textField" id="textField" cols="30" rows="5"></textarea>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
